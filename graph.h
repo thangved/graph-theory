@@ -24,6 +24,7 @@ public:
     list<int> neighbors(int x);
     void dfs(int x);
     void bfs(int x);
+    int degree(int x);
 };
 
 void graph::init(int n)
@@ -159,4 +160,12 @@ void graph::bfs(int x)
         }
     }
     cout << endl;
+}
+
+int graph::degree(int x)
+{
+    int d = 0;
+    for (int i = 1; i <= n; i++)
+        d += m[x][i];
+    return d;
 }

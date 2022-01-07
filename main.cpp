@@ -11,10 +11,12 @@ int main()
 
     // with directed
     cout << "with directed" << endl;
-    graph g2((char *)"./graph1.txt", true);
+    graph g2((char *)"./graph.txt", true);
     g2.print();
     g2.dfs(1);
     g2.bfs(1);
+
+    cout << g2.degree(2);
 
     return 0;
 }
