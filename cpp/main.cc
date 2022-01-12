@@ -41,7 +41,7 @@ int main()
     set_zero(num);
     set_zero(min_num);
 
-    g1.scc_char(6, k, on_stack, num, min_num);
+    g1.scc(4, k, on_stack, num, min_num);
 
     printArray(num + 1, g1.getN());
     printArray(min_num + 1, g1.getN());
