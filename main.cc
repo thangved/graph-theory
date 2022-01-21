@@ -2,6 +2,6 @@
 using namespace std;
 int main()
 {
-    printf("%.101f", 0.2);
+    cout << "Hello, World" << endl;
     return 0;
 }

@@ -2,7 +2,7 @@
 
 int main()
 {
-    FILE *f = freopen("./dt1.txt", "r", stdin);
+    freopen("./dt1.txt", "r", stdin);
 
     int n, m;
     scanf("%d%d", &n, &m);
@@ -15,9 +15,7 @@ int main()
         add_edge(&g, u, v);
     }
 
-    print_graph(g);
-
-    fclose(f);
+    printf("%d", count_connected(&g));
 
     return 0;
 }
