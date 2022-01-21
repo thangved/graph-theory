@@ -41,7 +41,7 @@ int main()
     set_zero(num);
     set_zero(min_num);
 
-    g1.scc(1, k, on_stack, num, min_num);
+    g1.scc(4, k, on_stack, num, min_num);
 
     return 0;
 }
